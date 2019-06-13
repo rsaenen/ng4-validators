@@ -1,3 +1,5 @@
+### [8.0.0]
+- Angular 8 support
 ### [7.0.0]
 - Angular 7 support
 ### [6.1.0]

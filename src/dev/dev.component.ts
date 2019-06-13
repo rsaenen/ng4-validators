@@ -3,9 +3,9 @@ import { Validators, FormControl, FormGroup } from '@angular/forms';
 import { CustomValidators } from '../app/custom-forms.module';
 
 @Component({
-  selector: 'dev',
+  selector: 'app-dev',
   templateUrl: 'dev.component.html',
-  styleUrls: ['dev.component.less']
+  styleUrls: ['dev.component.scss']
 })
 export class DevComponent implements OnInit {
   public form: FormGroup;
@@ -19,8 +19,8 @@ export class DevComponent implements OnInit {
     const certainPassword = new FormControl('', CustomValidators.notEqualTo(password));
 
     this.form = new FormGroup({
-      password: password,
-      certainPassword: certainPassword
+      password,
+      certainPassword
     });
   }
 
