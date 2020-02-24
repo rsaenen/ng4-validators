@@ -1,58 +1,59 @@
-import { AbstractControl, ValidatorFn } from '@angular/forms';
-import { NgModule } from '@angular/core';
-import { arrayLength } from './array-length/validator';
-import { base64 } from './base64/validator';
-import { creditCard } from './credit-card/validator';
-import { date } from './date/validator';
-import { dateISO } from './date-iso/validator';
-import { digits } from './digits/validator';
-import { email } from './email/validator';
-import { equal } from './equal/validator';
-import { equalTo } from './equal-to/validator';
-import { gt } from './greater-than/validator';
-import { gte } from './greater-than-equal/validator';
-import { json } from './json/validator';
-import { lt } from './less-than/validator';
-import { lte } from './less-than-equal/validator';
-import { max } from './max/validator';
-import { maxDate } from './max-date/validator';
-import { min } from './min/validator';
-import { minDate } from './min-date/validator';
-import { notEqual } from './not-equal/validator';
-import { notEqualTo } from './not-equal-to/validator';
-import { number } from './number/validator';
-import { property } from './property/validator';
-import { range } from './range/validator';
-import { rangeLength } from './range-length/validator';
-import { uuid } from './uuid/validator';
-import { url } from './url/validator';
-
 import { ArrayLengthValidator } from './array-length/directive';
+import { arrayLength } from './array-length/validator';
 import { Base64Validator } from './base64/directive';
+import { base64 } from './base64/validator';
 import { CreditCardValidator } from './credit-card/directive';
-import { DateValidator } from './date/directive';
+import { creditCard } from './credit-card/validator';
 import { DateISOValidator } from './date-iso/directive';
+import { dateISO } from './date-iso/validator';
+import { DateValidator } from './date/directive';
+import { date } from './date/validator';
 import { DigitsValidator } from './digits/directive';
+import { digits } from './digits/validator';
 import { EmailValidator } from './email/directive';
-import { EqualValidator } from './equal/directive';
+import { email } from './email/validator';
 import { EqualToValidator } from './equal-to/directive';
-import { GreaterThanValidator } from './greater-than/directive';
+import { equalTo } from './equal-to/validator';
+import { EqualValidator } from './equal/directive';
+import { equal } from './equal/validator';
 import { GreaterThanEqualValidator } from './greater-than-equal/directive';
+import { gte } from './greater-than-equal/validator';
+import { GreaterThanValidator } from './greater-than/directive';
+import { gt } from './greater-than/validator';
 import { JSONValidator } from './json/directive';
-import { LessThanValidator } from './less-than/directive';
+import { json } from './json/validator';
 import { LessThanEqualValidator } from './less-than-equal/directive';
-import { MaxValidator } from './max/directive';
+import { lte } from './less-than-equal/validator';
+import { LessThanValidator } from './less-than/directive';
+import { lt } from './less-than/validator';
 import { MaxDateValidator } from './max-date/directive';
-import { MinValidator } from './min/directive';
+import { maxDate } from './max-date/validator';
+import { MaxValidator } from './max/directive';
+import { max } from './max/validator';
 import { MinDateValidator } from './min-date/directive';
-import { NotEqualValidator } from './not-equal/directive';
+import { minDate } from './min-date/validator';
+import { MinValidator } from './min/directive';
+import { min } from './min/validator';
 import { NotEqualToValidator } from './not-equal-to/directive';
+import { notEqualTo } from './not-equal-to/validator';
+import { NotEqualValidator } from './not-equal/directive';
+import { notEqual } from './not-equal/validator';
 import { NumberValidator } from './number/directive';
+import { number } from './number/validator';
+import { PhoneValidator } from './phone/directive';
+import { phone } from './phone/validator';
 import { PropertyValidator } from './property/directive';
-import { RangeValidator } from './range/directive';
+import { property } from './property/validator';
 import { RangeLengthValidator } from './range-length/directive';
+import { rangeLength } from './range-length/validator';
+import { RangeValidator } from './range/directive';
+import { range } from './range/validator';
 import { UrlValidator } from './url/directive';
+import { url } from './url/validator';
 import { UUIDValidator } from './uuid/directive';
+import { uuid } from './uuid/validator';
+import { NgModule } from '@angular/core';
+import { AbstractControl, ValidatorFn } from '@angular/forms';
 
 export const CustomValidators = {
   arrayLength,
@@ -76,6 +77,7 @@ export const CustomValidators = {
   notEqual,
   notEqualTo,
   number,
+  phone,
   property,
   range,
   rangeLength,
@@ -105,6 +107,7 @@ const CustomDirectives = [
   NotEqualValidator,
   NotEqualToValidator,
   NumberValidator,
+  PhoneValidator,
   PropertyValidator,
   RangeValidator,
   RangeLengthValidator,
