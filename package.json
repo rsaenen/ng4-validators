@@ -41,11 +41,15 @@
   },
   "ngPackage": {
     "lib": {
-      "entryFile": "public_api.ts"
+      "entryFile": "public_api.ts",
+      "umdModuleIds": {
+        "libphonenumber-js": "libphonenumber-js"
+      }
     },
     "whitelistedNonPeerDependencies": [
       "@angular/*",
       "bootstrap",
+      "libphonenumber-js",
       "moment",
       "rxjs",
       "tslib",
@@ -56,7 +60,8 @@
   "private": false,
   "peerDependencies": {
     "@angular/core": "^9.0.0",
-    "@angular/forms": "^9.0.0"
+    "@angular/forms": "^9.0.0",
+    "libphonenumber-js": "^1.7.44"
   },
   "dependencies": {
     "@angular/common": "~9.0.0",
@@ -67,6 +72,7 @@
     "@angular/platform-browser-dynamic": "~9.0.0",
     "@angular/router": "~9.0.0",
     "bootstrap": "^4.1.3",
+    "libphonenumber-js": "^1.7.44",
     "moment": "^2.24.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
