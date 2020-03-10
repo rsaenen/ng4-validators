@@ -40,8 +40,6 @@ import { NotEqualValidator } from './not-equal/directive';
 import { notEqual } from './not-equal/validator';
 import { NumberValidator } from './number/directive';
 import { number } from './number/validator';
-import { PhoneValidator } from './phone/directive';
-import { phone } from './phone/validator';
 import { PropertyValidator } from './property/directive';
 import { property } from './property/validator';
 import { RangeLengthValidator } from './range-length/directive';
@@ -77,7 +75,6 @@ export const CustomValidators = {
   notEqual,
   notEqualTo,
   number,
-  phone,
   property,
   range,
   rangeLength,
@@ -107,7 +104,6 @@ const CustomDirectives = [
   NotEqualValidator,
   NotEqualToValidator,
   NumberValidator,
-  PhoneValidator,
   PropertyValidator,
   RangeValidator,
   RangeLengthValidator,
