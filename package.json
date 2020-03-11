@@ -1,6 +1,6 @@
 {
   "name": "ngx-custom-validators",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "Angular custom directives for validation",
   "scripts": {
     "ng": "ng",

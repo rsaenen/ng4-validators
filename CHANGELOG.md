@@ -1,3 +1,8 @@
+### [9.0.1]
+- Merge pull request [#32](https://github.com/rsaenen/ngx-custom-validators/pull/32)
+- Fix issue [#31](https://github.com/rsaenen/ngx-custom-validators/issues/31)
+### [9.0.0]
+- Angular 9 support
 ### [8.0.0]
 - Angular 8 support
 ### [7.0.0]
