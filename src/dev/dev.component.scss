@@ -1,9 +1,44 @@
+// styles match bootstrap 4
 .container {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.alert {
-  padding: 5px;
+.col-3,
+.col-9 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.alert-danger {
+  color: red;
+}
+
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
