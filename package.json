@@ -1,6 +1,6 @@
 {
   "name": "ngx-custom-validators",
-  "version": "9.1.0",
+  "version": "10.0.0",
   "description": "Angular custom directives for validation",
   "scripts": {
     "ng": "ng",
@@ -17,14 +17,7 @@
   },
   "keywords": [
     "angular",
-    "angular2",
-    "angular 2",
-    "angular4",
-    "angular 4",
-    "angular5",
-    "angular 5",
-    "angular6",
-    "angular 6",
+    "angular 10",
     "directive",
     "reactive",
     "template",
@@ -85,7 +78,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^10.1.0",
+    "ng-packagr": "^10.1.2",
     "protractor": "~7.0.0",
     "ts-node": "~9.0.0",
     "tslint": "~6.1.0",

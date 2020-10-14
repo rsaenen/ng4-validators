@@ -1,3 +1,10 @@
+### [10.0.0]
+- Angular 10 support
+- Merge pull request [#41](https://github.com/rsaenen/ngx-custom-validators/pull/41)
+- Fix issue [#37](https://github.com/rsaenen/ngx-custom-validators/issues/37)
+- Fix issue [#38](https://github.com/rsaenen/ngx-custom-validators/issues/38)
+- Fix issue [#39](https://github.com/rsaenen/ngx-custom-validators/issues/39)
+- Fix issue [#40](https://github.com/rsaenen/ngx-custom-validators/issues/40)
 ### [9.1.0]
 - Angular 9.1 support
 ### [9.0.1]
