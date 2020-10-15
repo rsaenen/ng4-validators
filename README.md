@@ -569,6 +569,21 @@ this.form = new FormGroup({
 </form>
 ```
 
+### not matching a regular expression - notMatching (negate pattern)
+```typescript
+public pattern = /a+bc/
+this.form = new FormGroup({
+  p: new FormControl('aabc', CustomValidators.notIncludedIn(pattern))
+});
+```
+
+```html
+<form [formGroup]="form">
+  <input type="text" formControlName="p">
+  <p *ngIf="arr.errors?.notMatching">notMatching error</p>
+</form>
+```
+
 # For developpers
 To run the projet : `npm start`
 Don't forget to run `npm test` and `npm lint` before each pull request. Thanks !
