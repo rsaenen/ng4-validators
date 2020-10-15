@@ -20,6 +20,8 @@ import { GreaterThanEqualValidator } from './greater-than-equal/directive';
 import { gte } from './greater-than-equal/validator';
 import { GreaterThanValidator } from './greater-than/directive';
 import { gt } from './greater-than/validator';
+import { IncludedInValidator } from './included-in/directive';
+import { includedIn } from './included-in/validator';
 import { JSONValidator } from './json/directive';
 import { json } from './json/validator';
 import { LessThanEqualValidator } from './less-than-equal/directive';
@@ -38,6 +40,10 @@ import { NotEqualToValidator } from './not-equal-to/directive';
 import { notEqualTo } from './not-equal-to/validator';
 import { NotEqualValidator } from './not-equal/directive';
 import { notEqual } from './not-equal/validator';
+import { NotIncludedInValidator } from './not-included-in/directive';
+import { notIncludedIn } from './not-included-in/validator';
+import { NotMatchingValidator } from './not-matching/directive';
+import { notMatching } from './not-matching/validator';
 import { NumberValidator } from './number/directive';
 import { number } from './number/validator';
 import { PropertyValidator } from './property/directive';
@@ -65,6 +71,7 @@ export const CustomValidators = {
   equalTo,
   gt,
   gte,
+  includedIn,
   json,
   lt,
   lte,
@@ -74,6 +81,8 @@ export const CustomValidators = {
   minDate,
   notEqual,
   notEqualTo,
+  notIncludedIn,
+  notMatching,
   number,
   property,
   range,
@@ -94,6 +103,7 @@ const CustomDirectives = [
   EqualToValidator,
   GreaterThanValidator,
   GreaterThanEqualValidator,
+  IncludedInValidator,
   JSONValidator,
   LessThanValidator,
   LessThanEqualValidator,
@@ -103,6 +113,8 @@ const CustomDirectives = [
   MinDateValidator,
   NotEqualValidator,
   NotEqualToValidator,
+  NotIncludedInValidator,
+  NotMatchingValidator,
   NumberValidator,
   PropertyValidator,
   RangeValidator,
