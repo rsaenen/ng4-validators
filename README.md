@@ -28,6 +28,8 @@ npm i ngx-custom-validators --save
 - digits
 - email
 - equal
+- included in
+- not included in
 - not equal
 - equal to
 - not equal to
@@ -534,6 +536,51 @@ this.form = new FormGroup({
 <form [formGroup]="form">
   <input type="text" formControlName="arr">
   <p *ngIf="arr.errors?.arrayLength">arrayLength error</p>
+</form>
+```
+
+### included in array - includedIn
+```typescript
+public arr = [{ name: 'baguette' }, { name: 'croisant' }]
+this.form = new FormGroup({
+  arr: new FormControl('bread', CustomValidators.includedIn(arr))
+});
+```
+
+```html
+<form [formGroup]="form">
+  <input type="text" formControlName="arr">
+  <p *ngIf="arr.errors?.includedIn">includedIn error</p>
+</form>
+```
+
+### not included in array - notIncludedIn
+```typescript
+public arr = [{ name: 'baguette' }, { name: 'croisant' }]
+this.form = new FormGroup({
+  arr: new FormControl('baguette', CustomValidators.notIncludedIn(arr))
+});
+```
+
+```html
+<form [formGroup]="form">
+  <input type="text" formControlName="arr">
+  <p *ngIf="arr.errors?.notIncludedIn">notIncludedIn error</p>
+</form>
+```
+
+### not matching a regular expression - notMatching (negate pattern)
+```typescript
+public pattern = /a+bc/
+this.form = new FormGroup({
+  p: new FormControl('aabc', CustomValidators.notIncludedIn(pattern))
+});
+```
+
+```html
+<form [formGroup]="form">
+  <input type="text" formControlName="p">
+  <p *ngIf="arr.errors?.notMatching">notMatching error</p>
 </form>
 ```
 
