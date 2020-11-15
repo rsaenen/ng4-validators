@@ -19,7 +19,7 @@ const routes: Routes = [
     CustomFormsModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { relativeLinkResolution: 'corrected' })
   ],
   declarations: [DevComponent],
   bootstrap: [DevComponent]

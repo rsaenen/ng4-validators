@@ -44,6 +44,8 @@ export const minDate = (minInput: any): ValidatorFn => {
       value = value();
     }
 
-    return d >= new Date(value).getTime() ? null : (isForm ? { minDate: { control: minInput, value: minInput.value } } : { minDate: { value: minValue, control: undefined } });
+    return d >= new Date(value).getTime()
+      ? null
+      : (isForm ? { minDate: { control: minInput, value: minInput.value } } : { minDate: { value: minValue, control: undefined } });
   };
 };

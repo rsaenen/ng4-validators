@@ -21,7 +21,8 @@ class NotMatchingValidatorAppComponent {
 
 describe('NotMatchingValidator', () => {
 
-    let fixture: ComponentFixture<NotMatchingValidatorAppComponent>, component: NotMatchingValidatorAppComponent;
+    let fixture: ComponentFixture<NotMatchingValidatorAppComponent>;
+    let component: NotMatchingValidatorAppComponent;
 
     beforeEach(() => {
         fixture = createComponent(NotMatchingValidatorAppComponent, [FormsModule, CustomFormsModule]);

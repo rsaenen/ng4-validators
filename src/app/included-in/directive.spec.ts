@@ -21,7 +21,8 @@ class IncludedInValidatorAppComponent {
 
 describe('IncludedInValidator', () => {
 
-    let fixture: ComponentFixture<IncludedInValidatorAppComponent>, component: IncludedInValidatorAppComponent;
+    let fixture: ComponentFixture<IncludedInValidatorAppComponent>;
+    let component: IncludedInValidatorAppComponent;
 
     beforeEach(() => {
         fixture = createComponent(IncludedInValidatorAppComponent, [FormsModule, CustomFormsModule]);
