@@ -1,3 +1,5 @@
+### [11.0.0]
+- Angular 11 support
 ### [10.0.0]
 - Angular 10 support
 - Merge pull request [#41](https://github.com/rsaenen/ngx-custom-validators/pull/41)

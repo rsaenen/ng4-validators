@@ -47,7 +47,11 @@
   },
   "homepage": "https://github.com/rsaenen/ngx-custom-validators#readme",
   "private": false,
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@angular/common": "~11.0.0",
+    "@angular/core": "~11.0.0",
+    "@angular/forms": "~11.0.0"
+  },
   "dependencies": {
     "@angular/common": "~11.0.0",
     "@angular/compiler": "~11.0.0",
