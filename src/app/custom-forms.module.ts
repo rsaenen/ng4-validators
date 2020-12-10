@@ -57,7 +57,6 @@ import { url } from './url/validator';
 import { UUIDValidator } from './uuid/directive';
 import { uuid } from './uuid/validator';
 import { NgModule } from '@angular/core';
-import { AbstractControl, ValidatorFn } from '@angular/forms';
 
 export const CustomValidators = {
   arrayLength,

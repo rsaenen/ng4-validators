@@ -43,6 +43,8 @@ export const maxDate = (maxInput: any): ValidatorFn => {
       value = value();
     }
 
-    return d <= new Date(value).getTime() ? null : (isForm ? { maxDate: { control: maxInput, value: maxInput.value } } : { maxDate: { value: maxValue, control: undefined } });
+    return d <= new Date(value).getTime()
+      ? null
+      : (isForm ? { maxDate: { control: maxInput, value: maxInput.value } } : { maxDate: { value: maxValue, control: undefined } });
   };
 };
